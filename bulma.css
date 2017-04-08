@@ -4123,7 +4123,7 @@ label.panel-block:hover {
 .tabs a {
   align-items: center;
   border-bottom: 1px solid #dbdbdb;
-  color: #4a4a4a;
+
   display: flex;
   justify-content: center;
   margin-bottom: -1px;
@@ -5170,7 +5170,7 @@ label.panel-block:hover {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 @media screen and (min-width: 1192px) {
