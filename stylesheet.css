@@ -36,6 +36,7 @@ body{
     position: relative;
     margin-left: -125px;
 }
+.dark-blue{background-color: #20395C; }
 .blue{background-color: #0E4A7E;}
 .new-blue{background-color: #86a4be !important;}
 .gray{    background-color: #dbdbdb !important;}
@@ -81,6 +82,16 @@ header, footer {
 }
 .silo-banner:before{
      background-image: url(images/corporate-video-home-banner.jpg);
+}
+.car-banner{
+    background-image: url(images/car-accident-banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-banner{
+    background-image: url(images/home-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .text-width-26{max-width: 26ch;}
 .text-width-36{max-width: 36ch;}
