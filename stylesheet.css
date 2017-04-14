@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Lustria');
 .display-font{
     font-family: 'Cinzel', serif;
+}
+body{
+    font-family: 'Lustria', sans-serif;
+       background-color: #20395C;
 }
 .fade-in-up{
     animation-name: slideInUp;
@@ -24,9 +29,7 @@
 .animate-last{
     animation-delay: 40ms;
 }
-body{
-    background-color: #20395C;
-}
+
 .heading {
     display: flex;
     flex-direction: row;
@@ -55,6 +58,9 @@ header, footer {
         border-radius: 3px;
         padding-right: 20px;
 
+    }
+    .blue-color{
+        color: #20395C
     }
 .banner:before {
     background-color: #20395C;

@@ -17,26 +17,34 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="hero blue">
+        <div class="hero dark-blue">
             <div class="hero-body">
                 
-             <a href="index.html">   <h1 class="title is-2 display-font white-font has-text-centered">Van Cleve Insurance</h1>
-                <h2 class="subtitle display-font white-font has-text-centered">Indianola, Mississippi</h2></a>
+             <a href="index.html"><h1 class="title is-2 display-font white-font has-text-centered">Van Cleve Insurance</h1>
+                <h2 class="subtitle is-3 display-font white-font has-text-centered">Indianola, Mississippi</h2></a>
             </div>
-          
-                <div class="tabs is-centered">
+             <nav class="tabs is-centered is-hidden-touch">
                  <ul>
-                 
-                        <li class="white-font"><a href="homeowners_insurance.html" class="white-font">Home Insurance</a></li>
-                         <li class=""><a href="auto_insurance.html" class="white-font">Auto Insurance</a></li>
-                          <li class=""><a href="life_insurance.html" class="white-font">Life Insurance</a></li>
-
+                        <li class="white-font"><a href="homeowners_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home Insurance</a></li>
+                         <li class=""><a href="auto_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>Auto Insurance</a></li>
+                          <li class=""><a href="life_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>Life Insurance</a></li>
                         </ul>
-                   
-                
+                </nav>
+                <div class="is-hidden nav-menu"  id="navbar">
+                    <div class="nav-item">
+                        <a href="homeowners_insurance.html" class="subtitle white-font nav-item"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home Insurance</a>
+                    </div>
                 </div>
+          <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
+						<span></span>
+						<span></span>
+						<span></span>
+				</div>       
+                
+                
         </div>
     <div class="container">
+       
         <div class="hero">
             <div class="hero-body banner building-banner">
                 
@@ -52,22 +60,44 @@
         <div class="columns is-centered">
             
             <div class="column box has-text-centered">
-                <a href="homeowners_insurance.html">  <img src="images/icons/home.svg" class="is-centered"/>
-                <h1 class="title display-font">Home Insurance</h1></a>
-                <p class="subtitle">Our Homeowners Policy protects the home, contents and provides personal liability coverage.</p>
-
+               <span class="image is-128-128"><i class="fa fa-5x fa-home blue-color" aria-hidden="true"></i></span>
+                <a href="homeowners_insurance.html">
+                <h1 class="title display-font">Home Insurance</h1>
+                <p class="subtitle">Our Homeowners Policy protects your home, property, and provides personal liability coverage.</p>
+                    </a>
             </div>
                 <div class="column  box has-text-centered ">
-                <a class="svg" href="auto_insurance.html"><img src="images/icons/car-compact.svg" class="is-centered svg"/>
-                <h1 class="title display-font">Auto Insurance</h1></a>
-                <p class="subtitle">We insure both private passenger autos as well as commercial automobiles.</p>
+               <span class="image is-128-128"><i class="fa fa-car fa-5x blue-color" aria-hidden="true"></i></span>
+               <a href="auto_insurance.html">
+                <h1 class="title display-font">Auto Insurance</h1>
+                <p class="subtitle">We insure both private passenger automobiles as well as commercial automobiles.</p>
+                </a>
             </div>
                 <div class="column box has-text-centered ">
-                <a href="life_insurance.html">  <img src="images/icons/heart.svg" class="is-centered"/>
-                <h1 class="title display-font">Life Insurance</h1></a>
-                <p class="subtitle">We write several types of Life Insurance which includes Universal Life and various types of Term Life Policies.</p>
+                     <span class="image is-128-128"><i class="fa fa-heartbeat fa-5x blue-color" aria-hidden="true"></i></span>
+                <a href="life_insurance.html"> 
+                <h1 class="title display-font">Life Insurance</h1>
+                <p class="subtitle">We write several types of Life Insurance which include Universal Life and various types of Term Life Policies.</p>
+                </a>
             </div>
+            
         </div>
+        <div class="columns is-centered">
+                <div class="column box has-text-centered ">
+                        <span class="image is-128-128"><i class="fa fa-building  fa-5x blue-color" aria-hidden="true"></i></span>
+                    <a href="life_insurance.html"> 
+                    <h1 class="title display-font">Buisness Insurance</h1>
+                    <p class="subtitle">We provide Property Insurance, Liability Insurance and various other coverages.</p>
+                    </a>
+                </div>
+                 <div class="column box has-text-centered ">
+                        <span class="image is-128-128"><i class="fa fa-envira  fa-5x blue-color" aria-hidden="true"></i></span>
+                    <a href="life_insurance.html"> 
+                    <h1 class="title display-font">Farm Insurance</h1>
+                    <p class="subtitle">We write a Farm Package which covers farm property, farm liability and farm equipment.</p>
+                    </a>
+                </div>
+            </div>
 
 
      </div>  
@@ -84,4 +114,17 @@
         <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
     </footer>
     </body>
+    <script type="text/javascript">	
+		function navtoggle() {
+        var d = document.getElementById("navbar");
+        var e = document.getElementById("navtoggle");
+        if (d.classList.contains("is-active")) {
+            d.classList.remove("is-active");
+            e.classList.remove("is-active");
+        } else {
+            d.classList.add("is-active");
+            e.classList.add("is-active");
+        }
+    }
+	</script>
 </html>
