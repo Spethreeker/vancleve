@@ -3718,14 +3718,14 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    /*background-color: white;
+    background-color: white;
     box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1);
     left: 0;
     display: none;
     right: 0;
     top: 100%;
-    position: absolute;*/
-     box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
+    position: absolute;
+     /*box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
         padding-left:10px;
         left: -200px;
         top: 100%;
@@ -3735,7 +3735,7 @@ a.nav-item.is-tab.is-active {
         color: white;
         z-index: 0;
         -webkit-transition: all .3s ease;
-        transition: all .3s ease;
+        transition: all .3s ease;*/
   }
   .nav-menu .nav-item {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
@@ -3791,7 +3791,7 @@ a.nav-item.is-tab.is-active {
 .nav {
   align-items: stretch;
   background-color: white;
-  display: flex;
+  /*display: flex;*/
   min-height: 3.5rem;
   position: relative;
   text-align: center;
@@ -4118,7 +4118,7 @@ label.panel-block:hover {
   -ms-user-select: none;
   user-select: none;
   align-items: stretch;
-  display: flex;
+  /*display: flex;*/
   font-size: 1rem;
   justify-content: space-between;
   overflow: hidden;
@@ -4160,7 +4160,7 @@ label.panel-block:hover {
 .tabs ul {
   align-items: center;
   border-bottom: 1px solid #dbdbdb;
-  display: flex;
+  /*display: flex;*/
   flex-grow: 1;
   flex-shrink: 0;
   justify-content: flex-start;
@@ -5202,7 +5202,7 @@ label.panel-block:hover {
 
 .hero .nav {
   background: none;
-  box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3);
+  /*box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3);*/
 }
 
 .hero .tabs ul {

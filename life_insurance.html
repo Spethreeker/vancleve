@@ -9,35 +9,37 @@
         <title>Life Insurance - Van Cleve Insurance</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bulma.css">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
         <script src="https://use.fontawesome.com/a9de8a2dbb.js"></script>
     </head>
 <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="hero blue">
+        <div class="hero dark-blue">
             <div class="hero-body">
               <a href="index.html"> <h1 class="title is-2 display-font white-font has-text-centered">Van Cleve Insurance</h1>
                 <h2 class="subtitle display-font white-font has-text-centered">Indianola, Mississippi</h2></a>
             </div>
           
-                <div class="tabs is-centered">
-                 <ul>
-                 
-                        <li class="white-font"><a href="homeowners_insurance.html" class="subtitle white-font">Home Insurance</a></li>
-                         <li class=""><a href="auto_insurance.html" class="subtitle white-font">Auto Insurance</a></li>
-                          <li class=""><a href="life_insurance.html" class="subtitle white-font">Life Insurance</a></li>
-
+                 <nav class="nav-menu tabs is-centered nav"  id="navbar">
+                 <ul class="nav-dropdown">
+                        <li class="white-font"><a href="homeowners_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home Insurance</a></li>
+                         <li class=""><a href="auto_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>Auto Insurance</a></li>
+                          <li class=""><a href="life_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>Life Insurance</a></li>
                         </ul>
-                   
-                
-                </div>
+                </nav>
+               
+          <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
+						<span></span>
+						<span></span>
+						<span></span>
+				</div>       
         </div>
     <div class="container">
         <div class="hero">
-            <div class=" hero-body banner ">
+            <div class=" hero-body banner life-banner ">
                 
             
             
