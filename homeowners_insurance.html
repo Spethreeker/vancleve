@@ -21,14 +21,22 @@
             <div class="hero-body">
               <a href="index.html"> <h1 class="title is-2 display-font white-font has-text-centered">Van Cleve Insurance</h1>
                 <h2 class="subtitle display-font white-font has-text-centered">Indianola, Mississippi</h2></a>
+                <p class="subtitle heading display-font white-font has-text-centered">Insurance and bonds</p>
             </div>
-          
-                 <nav class="nav-menu tabs is-centered nav"  id="navbar">
-                 <ul class="nav-dropdown">
-                        <li class="white-font"><a href="homeowners_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home Insurance</a></li>
-                         <li class=""><a href="auto_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>Auto Insurance</a></li>
-                          <li class=""><a href="life_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>Life Insurance</a></li>
+                <nav class="nav nav-menu has-shadow"  id="navbar">
+                 <ul class="nav-center nav-dropdown">
+                     <li class="nav-item white-font dropdown-activator">Insurance Products
+                        <ul class="drop-down-container">
+                            <li class="drop-down-item"><a href="homeowners_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home Insurance</a></li>
+                            <li class="drop-down-item"><a href="auto_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>Auto Insurance</a></li>
+                            <li class="drop-down-item"><a href="life_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>Life Insurance</a></li>
+                            <li class="drop-down-item"><a href="buisness_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span>Farm Insurance</a></li>
+                            <li class="drop-down-item"><a href="farm_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-envira" aria-hidden="true"></i></span>Buisness Insurance</a></li>
                         </ul>
+                     </li>
+                     <li class="nav-item white-font">Bonds</li>
+
+                 </ul>
                 </nav>
                
           <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
@@ -36,16 +44,20 @@
 						<span></span>
 						<span></span>
 				</div>       
+				</div>       
         </div>
     <div class="container">
         <div class="hero">
             <div class="hero-body banner home-banner">
-                
-            
-            
-                <h2 class="title is-1 white-font display-font has-text-centered homow-title">
+              <div class="banner-title has-text-centered underlay gradient">
+                <h2 class="title is-1 white-font display-font">
                     Homeowners Insurance
                 </h2>
+             <a href="#" class="button is-medium is-white is-outlined"> 
+                                   Request a Quote now!
+                              </a>
+              </div>
+                  
                 
             </div>
         </div><br>
@@ -53,21 +65,40 @@
             
            
                 <div class="column is-two-thirds notification box has-text-centered">
-         
-                     <h1 class="title display-font">Yada Yada yada</h1>
-                     <p class="subtitle has-text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident,
-                          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="content">
+                        <h1 class="title display-font">Yada Yada yada</h1>
+                        <p class="subtitle has-text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            
+                            <div class="notification">
+                                
+                            </div>
+                    </div>
             </div>
-             <div class="column is-one-third box has-text-centered">   
-                <h1 class="title display-font">Our Companies</h1>
-                <ul>
-                    <li>
+             <div class="column is-one-third box has-text-centered panel">   
+                <h1 class="display-font panel-heading">Our Companies</h1>
+                <ul class="">
+                    <li class="panel-block">
+                        <img src="images/logos/StateAuto_logo.jpg" alt="State Auto"/></li>
+                         <li class="panel-block">
+                            <img src="images/logos/travelers_logo.jpg" alt="Travelers"/>
+                        </li>
+                         <li class="panel-block">
+                        <img src="images/logos/MetLife.png" alt="MetLife">
+                        </li>
+                         <li class="panel-block">
+                            <img src="images/logos/logo-progressive.png" alt="Progressive">
+                        </li>
                         
+                         <li class="panel-block">
+                             <img src="images/logos/Foremost.jpg" alt="Foremost">
+                        
+                        </li>
                     </li>
                 </ul>
             </div>
@@ -88,4 +119,17 @@
         <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
     </footer>
     </body>
+    <script type="text/javascript">	
+		function navtoggle() {
+        var d = document.getElementById("navbar");
+        var e = document.getElementById("navtoggle");
+        if (d.classList.contains("is-active")) {
+            d.classList.remove("is-active");
+            e.classList.remove("is-active");
+        } else {
+            d.classList.add("is-active");
+            e.classList.add("is-active");
+        }
+    }
+	</script>
 </html>

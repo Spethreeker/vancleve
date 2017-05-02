@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
-@import url('https://fonts.googleapis.com/css?family=Lustria');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 .display-font{
     font-family: 'Cinzel', serif;
 }
+
 body{
-    font-family: 'Lustria', sans-serif;
+font-family: 'Libre Baskerville', serif;
        background-color: #20395C;
 }
 .fade-in-up{
@@ -58,6 +59,11 @@ header, footer {
         border-radius: 3px;
         padding-right: 20px;
 
+    }
+    .underlay.gradient{
+        background: linear-gradient(180deg, rgba(50, 50, 50, 0.4), rgba(100, 100, 100, 0.8));
+        margin-right: 20px;
+        padding-bottom: 10px;
     }
     .blue-color{
         color: #20395C
@@ -116,7 +122,7 @@ header, footer {
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.homow-title{
+.banner-title{
     margin-top: 40px;
 }
 .text-width-26{max-width: 26ch;}
@@ -187,12 +193,118 @@ form {
     flex-direction: row !important;
     }
 }
-@media screen and (min-width: 769px) {
-.tabs ul {
-    display: flex;
-
-}
 .nav{
-    display: flex;
+    border-top:1px solid white;
 }
+.dropdown-activator{
+    flex-direction: column;
+     transition: all .09s ease;
 }
+.dropdown-activator:hover{
+    background: #026ca1;
+}
+li .drop-down-container {
+    display: none;
+    position: absolute;
+    text-align: left;
+    margin-left: -.75rem;
+}
+.drop-down-item{
+    background: #026CA1;
+    transition: all .09s ease;
+    padding: 5px;
+    box-shadow: rgba(10, 10, 10, 0.1), rgba(50, 50, 50, 1.4);
+}
+.drop-down-item:hover, .drop-down-item a:hover{
+      background-color: #075D88;
+    color: white;
+}
+
+
+
+    li:hover > .drop-down-container {
+        display: block;
+        margin-top: 5px;
+    }
+    li:hover > .drop-down-container {
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+    }
+    li:hover > .drop-down-container li {
+        opacity: 0;
+    }
+    li:hover > .drop-down-container li:nth-child(1) {
+        -webkit-animation-name: menu1;
+        animation-name: menu1;
+        -webkit-animation-duration: 50ms;
+        animation-duration: 50ms;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    li:hover > .drop-down-container li:nth-child(2) {
+        -webkit-animation-name: menu1;
+        animation-name: menu1;
+        -webkit-animation-duration: 150ms;
+        animation-duration: 150ms;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    li:hover > .drop-down-container li:nth-child(3) {
+        -webkit-animation-name: menu1;
+        animation-name: menu1;
+        -webkit-animation-duration: 250ms;
+        animation-duration: 250ms;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    li:hover > .drop-down-container li:nth-child(4) {
+        -webkit-animation-name: menu1;
+        animation-name: menu1;
+        -webkit-animation-duration: 350ms;
+        animation-duration: 350ms;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    li:hover > .drop-down-container li:nth-child(5) {
+        -webkit-animation-name: menu1;
+        animation-name: menu1;
+        -webkit-animation-duration: 400ms;
+        animation-duration: 400ms;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes menu1 {
+        0% {
+            opacity: 0;
+            -webkit-transform: rotateY(-90deg) translateY(30px);
+            transform: rotateY(-90deg) translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: rotateY(0deg) translateY(0px);
+            transform: rotateY(0deg) translateY(0px);
+        }
+    }
+    @keyframes menu1 {
+        0% {
+            opacity: 0;
+            -webkit-transform: rotateY(-90deg) translateY(30px);
+            transform: rotateY(-90deg) translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: rotateY(0deg) translateY(0px);
+            transform: rotateY(0deg) translateY(0px);
+        }
+    }
