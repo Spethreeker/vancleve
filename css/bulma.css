@@ -2368,7 +2368,7 @@ a.box:active {
 .notification .title,
 .notification .subtitle,
 .notification .content {
-  color: inherit;
+  /*color: inherit;*/
 }
 
 .notification.is-white {
@@ -4103,7 +4103,7 @@ label.panel-block:hover {
   -ms-user-select: none;
   user-select: none;
   align-items: stretch;
-  /*display: flex;*/
+  display: flex;
   font-size: 1rem;
   justify-content: space-between;
   overflow: hidden;
