@@ -43,7 +43,7 @@ font-family: 'Libre Baskerville', serif;
 .dark-blue-font{color: #20395C;}
 .blue{background-color: #0E4A7E;}
 .new-blue{background-color: #86a4be !important;}
-.gray{    background-color: #dbdbdb !important;}
+.gray{    background-color: #dbd3c7 !important;}
 .black{    background-color: #1F1D17;}
 .green{    /*background-color: #237019;*/background-color: #6b9a65;}
 .brown{    background-color: #a06c54;}
@@ -63,22 +63,19 @@ header, footer {
     color: #444;
 }
 .underlay{
-        background: rgba(50, 50, 50, 0.4);
-        margin-left: 20px;
-        border-radius: 3px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        margin-right: 20px;
-
+    background: rgba(50, 50, 50, 0.4);
+    margin-left: 20px;
+    border-radius: 3px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
     }
-    .underlay.gradient{
-        background: linear-gradient(180deg, rgba(50, 50, 50, 0.4), rgba(50,50, 50, 0.8));
-        
-       
-    }
-    .blue-color{
-        color: #20395C
-    }
+.underlay.gradient{
+    background: linear-gradient(180deg, rgba(50, 50, 50, 0.4), rgba(50,50, 50, 0.8));
+}
+.blue-color{
+    color: #20395C
+}
 .banner:before {
     background-color: #20395C;
     content: "";
@@ -189,14 +186,7 @@ form {
     font-size: 16px;
     font-weight: bold;
 }
-.login {
-    color:black;;
-    max-width: 300px;
-    text-align: center;
-    margin: 50px auto;
-    background-color: white;
-    padding: 25px;
-}
+
 .title-icon {
     float:left;
 }
@@ -208,14 +198,15 @@ form {
 .nav-dropdown{
     flex-direction: row !important;
     }
-}
-.nav{
-    /*border-top:1px solid white;*/
-    /*border-bottom: 1px solid white;*/
-    font-size: 22px;
-}
-.nav-center{
-    font-size: 22px;
+    .date {
+      display: none;
+  }
+  .title{
+      font-size: 1.5rem;
+  }
+  .subtitle{
+      font-size: 1.1rem
+  }
 }
 .panel-block{
     max-height: 200px;
@@ -223,7 +214,6 @@ form {
 .dropdown-activator{
     flex-direction: column;
     transition: all .09s ease;
- font-size: 22px;
 }
 .dropdown-activator:hover{
     background: #026ca1;
