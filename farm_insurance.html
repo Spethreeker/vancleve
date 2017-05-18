@@ -28,11 +28,11 @@
                  <ul class="nav-center nav-dropdown">
                      <li class="nav-item white-font dropdown-activator">Insurance Products
                         <ul class="drop-down-container">
-                            <li class="drop-down-item"><a href="homeowners_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home Insurance</a></li>
-                            <li class="drop-down-item"><a href="auto_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>Auto Insurance</a></li>
-                            <li class="drop-down-item"><a href="life_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>Life Insurance</a></li>
-                            <li class="drop-down-item"><a href="buisness_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span>Buisness Insurance</a></li>
-                            <li class="drop-down-item"><a href="farm_insurance.html" class="subtitle white-font"><span class="icon"><i class="fa fa-envira" aria-hidden="true"></i></span>Farm Insurance</a></li>
+                            <li class="drop-down-item"><a href="homeowners_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span><span>Home Insurance</span></a></li>
+                            <li class="drop-down-item"><a href="auto_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span><span>Auto Insurance</span></a></li>
+                            <li class="drop-down-item"><a href="life_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span><span>Life Insurance</span></a></li>
+                            <li class="drop-down-item"><a href="buisness_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span><span>Buisness Insurance</span></a></li>
+                            <li class="drop-down-item"><a href="farm_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-envira" aria-hidden="true"></i></span><span>Farm Insurance</span></a></li>
                         </ul>
                      </li>
                      <li class="nav-item white-font dropdown-activator">Bonds</li>
@@ -48,13 +48,12 @@
         </div>
     <div class="container">
         <div class="hero">
-            <div class=" hero-body banner farm-banner underlay gradient ">
-                
-            
-            
-                <h2 class="title is-1 white-font display-font banner-title">
+            <div class="hero-body banner farm-banner">
+               <div class="banner-title has-text-centered underlay">
+                <h1 class="title is-2 white-font display-font">
                    Farm Insurance
-                </h2>
+                </h1>
+               </div>
             </div>
         </div><br>
         <div class="columns">
@@ -113,5 +112,18 @@
             
         </div>
     </footer>
+    <script type="text/javascript">	
+		function navtoggle() {
+        var d = document.getElementById("navbar");
+        var e = document.getElementById("navtoggle");
+        if (d.classList.contains("is-active")) {
+            d.classList.remove("is-active");
+            e.classList.remove("is-active");
+        } else {
+            d.classList.add("is-active");
+            e.classList.add("is-active");
+        }
+    }
+	</script>
     </body>
 </html>
