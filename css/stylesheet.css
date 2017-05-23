@@ -85,17 +85,13 @@ header, footer {
     z-index: -1;
     left: 0;
     right: 0;
-    /*filter: blur(1px);
-   -webkit-filter: blur(1px);
-   -moz-filter: blur(1px);
-   -o-filter: blur(1px);
-   -ms-filter: blur(2px);*/
+
     width: 100%;
-    height: 200px;
+    height: 260px;
 }
 .banner{
      width: 100%;
-    height: 200px;
+    height: 260px;
     z-index: 0;
     left: 0;
     right: 0;
@@ -122,6 +118,7 @@ header, footer {
     background-image: url(../images/home-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: left;
 }
 .life-banner:before{
     background-image: url(../images/life-banner.jpg);
@@ -192,8 +189,13 @@ form {
 .login-heading {
     float:right;
     text-transform: uppercase;
+}   
+.insure-category{
+    transition: all .15s ease;
 }
-
+.insure-category:hover{
+    background: #e8e8e8;
+}
 .panel-block{
     max-height: 200px;
 }
@@ -209,7 +211,7 @@ li .drop-down-container {
     display: none;
     position: absolute;
     text-align: left;
-    margin-left: -.75rem;
+   
     margin-top: 0px;
 }
 .drop-down-item{
