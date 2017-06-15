@@ -20,17 +20,29 @@
         <![endif]-->
         <div class="hero dark-blue">
             <div class="hero-body gray">
-                
-             <a href="index.html"><h1 class="title is-2 display-font dark-blue-font has-text-centered">Van Cleve Insurance</h1>
-                <h2 class="subtitle is-3 display-font  has-text-centered">Indianola, Mississippi</h2></a>
-                <p class="subtitle is-4  display-font has-text-centered">Insurance and bonds</p>
-
+              <div class="level">
+                    <div class="level-item has-text-centered little-padding">
+                        <img src="images/logos/trustecchoice.png"  class="image is-128x128" alt="Trusted Choice" />
+                    </div>
+                <div class="level-item has-text-centered"><a href="index.html">
+                    <h1 class="title is-1 display-font">Van Cleve Insurance</h1>
+                    <h2 class="title display-font">Indianola, Mississippi</h2>
+                    </a>
+                  </div>
+                <div class="level-item has-text-centered"><a>
+                    <p class="title display-font">Insurance and bonds</p>
+                    <p class="title display-font">call 662-887-2575</p>
+                    </a>
+                </div>
+              </div>
             </div>
-             <nav class="nav nav-menu has-shadow" id="navbar">
-                 <ul class="nav-center nav-dropdown">
+            <div class="hero-foot dark-blue">
+              <nav class="nav nav-menu has-shadow animated" id="navbar">
+                 <ul class="nav-right nav-dropdown">
                      <li class="dropdown-activator white-font"><a href="index.html" rel="canonical" class="nav-item dropdown-activator white-font">Insurance Products</a>
                         <ul class="drop-down-container">
-<li class="drop-down-item"><a href="homeowners_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span><span>Home Insurance</span></a></li>
+                        <li class="drop-down-item">
+                            <a href="homeowners_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span><span>Home Insurance</span></a></li>
                             <li class="drop-down-item"><a href="auto_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span><span>Auto Insurance</span></a></li>
                             <li class="drop-down-item"><a href="life_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span><span>Life Insurance</span></a></li>
                             <li class="drop-down-item"><a href="buisness_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span><span>Buisness Insurance</span></a></li>
@@ -39,14 +51,15 @@
                      <li class=""><a href="#" class="nav-item white-font dropdown-activator">Bonds</a></li>
                  </ul>
                 </nav>
-          <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
-						<span></span>
-						<span></span>
-						<span></span>
-				</div>       
-                
-                
+        <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>        
         </div>
+</div>
+       
+    
     <div class="container">
        
         <div class="hero">
@@ -140,15 +153,17 @@
     </footer>
     </body>
     <script type="text/javascript">	
-		function navtoggle() {
         var d = document.getElementById("navbar");
         var e = document.getElementById("navtoggle");
-        if (d.classList.contains("is-active")) {
-            d.classList.remove("is-active");
-            e.classList.remove("is-active");
+		function navtoggle() {
+            e.classList.toggle("is-active");
+            d.classList.toggle("is-active");
+        if (d.classList.contains("slideInDown")) {
+            d.classList.remove("slideInDown");
+            d.classList.add("slideOutUp");
         } else {
-            d.classList.add("is-active");
-            e.classList.add("is-active");
+            d.classList.add("slideInDown");
+            d.classList.remove("slideOutUp");
         }
     }
 	</script>

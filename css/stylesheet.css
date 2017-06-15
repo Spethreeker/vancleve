@@ -3,27 +3,41 @@
 .display-font{
     font-family: 'Cinzel', serif;
 }
-
 body{
 font-family: 'Libre Baskerville', serif;
        background-color: #20395C;
 }
-.fade-in-up{
-    animation-name: slideInUp;
+.animated{
     animation-fill-mode: both;
     animation-duration: 500ms;
 }
-@keyframes slideInUp {
+.slideInDown {
+  animation-name: slideInDown;
+}
+@keyframes slideInDown {
   from {
-    -webkit-transform: translate3d(0, 5%, 0);
-    transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
+
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.slideOutUp {
+  animation-name: slideOutUp;
+}
+
 .animate-second{
     animation-delay: 20ms;
 }
@@ -37,7 +51,6 @@ font-family: 'Libre Baskerville', serif;
     clear: both;
     text-align: center;
     position: relative;
-   
 }
 .dark-blue{background-color: #20395C; }
 .dark-blue-font{color: #20395C;}
@@ -151,6 +164,9 @@ header, footer {
   padding: 1rem;
   margin-bottom: 1.75rem;
 }
+.company-pic{
+    max-width: 300px;
+}
 input[type=text], textarea, input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -211,8 +227,7 @@ li .drop-down-container {
     display: none;
     position: absolute;
     text-align: left;
-   
-    margin-top: 0px;
+   width: 100%;
 }
 .drop-down-item{
     background: #026CA1;
@@ -222,6 +237,12 @@ li .drop-down-container {
 .drop-down-item .button{
     background: inherit;
     border: none;
+}
+.little-padding{
+    position: relative;
+    /*margin-left: 10%;
+    margin-right: -5%;*/
+    width: 20%;
 }
 .drop-down-item:hover, .drop-down-item a:hover{
       background-color: #075D88;
@@ -313,6 +334,20 @@ li .drop-down-container {
             transform: rotateY(0deg) translateY(0px);
         }
     }
+    @media screen and (min-width: 1000px) and (max-width: 1191px) {
+  .little-padding{
+      margin-left: none;
+      margin-right: none;
+  }
+}
+ @media screen and (max-width: 1191px){
+     .little-padding{
+         display: none;
+     }
+     .level{
+         display: block;
+     }
+ }
 @media screen and (max-width: 768px) {
 .nav-dropdown{
     flex-direction: row !important;
@@ -337,5 +372,14 @@ li .drop-down-container {
   }
   .banner{
       height: 200px;
+  }
+  .little-padding{
+    display: none;
+  }
+  .drop-down-container{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      text-align: center;
   }
 }
