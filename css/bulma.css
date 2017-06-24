@@ -3009,7 +3009,7 @@ a.box:active {
 
 .level-item .title,
 .level-item .subtitle {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -3702,31 +3702,29 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    background-color: white;
+    /*background-color: white;*/
     box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1);
     left: 0;
     display: none;
     right: 0;
-    top: 100%;
-    position: absolute;
-     /*box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
+     box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
         padding-left:10px;
-        left: -200px;
-        top: 100%;
+        /*left: -200px;*/
+        /*top: 100%;*/
         position: absolute;
         text-align: left;
         line-height: 2;
         color: white;
         z-index: 0;
         -webkit-transition: all .3s ease;
-        transition: all .3s ease;*/
+        transition: all .3s ease;
   }
   .nav-menu .nav-item {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
     padding: 0.75rem;
   }
   .nav-menu.is-active {
-    display: block;
+    display: flex;
   }
 }
 
@@ -3775,7 +3773,7 @@ a.nav-item.is-tab.is-active {
 .nav {
   align-items: stretch;
   background-color: white;
-  /*display: flex;*/
+  display: flex;
   min-height: 3.5rem;
   position: relative;
   text-align: center;
