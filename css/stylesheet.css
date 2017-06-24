@@ -145,7 +145,7 @@ header, footer {
     background-repeat: no-repeat;
 }
 .buisness-banner:before{
-     background-image: url(../images/buisness-banner.jpg);
+     background-image: url(../images/buisness_banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
