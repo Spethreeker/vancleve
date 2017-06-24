@@ -17,44 +17,53 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <div class="hero dark-blue">
-            <div class="hero-body gray">
-              <div class="level">
-                    <div class="level-item has-text-centered little-padding">
-                        <img src="images/logos/trustecchoice.png"  class="image is-128x128" alt="Trusted Choice" />
+    <div class="hero dark-blue">
+        <div class="hero-head gray">
+            <div class="nav">
+                
+               <div class="container">
+                <div class="nav-left">
+                    <div class="nav-item has-text-centered">
+                    <a href="index.html">
+                        <h1 class="title is-2 display-font">Van Cleve Insurance</h1>
+                        <p class="subtitle display-font">Insurance and Bonds</p>
+                        <p class="subtitle number display-font">662-887-2575 | Indianola, Mississippi</p>
+                    </a>
                     </div>
-                <div class="level-item has-text-centered"><a href="index.html">
-                    <h1 class="title is-1 display-font">Van Cleve Insurance</h1>
-                    <h2 class="title display-font">Indianola, Mississippi</h2>
-                    </a>
-                  </div>
-                <div class="level-item has-text-centered"><a>
-                    
-                    <p class="title display-font">662-887-2575</p>
-                    </a>
                 </div>
-              </div>
-            </div>
-            <div class="hero-foot dark-blue">
-              <nav class="nav nav-menu has-shadow animated" id="navbar">
-                 <ul class="nav-right nav-dropdown">
-                     <li class="dropdown-activator white-font"><a href="index.html" rel="canonical" class="nav-item dropdown-activator white-font">Insurance Products</a>
-                        <ul class="drop-down-container">
-                        <li class="drop-down-item">
-                            <a href="homeowners_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span><span>Home Insurance</span></a></li>
+                <div class="nav-center">
+                    <ul class="nav-item nav-menu animated nav-dropdown" id="navbar">
+                    <li class="dropdown-activator" id="productList"><a onclick="showProducts()" rel="canonical" class="nav-item dropdown-activator">Insurance Products</a>
+                        <ul class="drop-down-container" >
+                            <li class="drop-down-item">
+                                <a href="homeowners_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span><span>Home Insurance</span></a></li>
                             <li class="drop-down-item"><a href="auto_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span><span>Auto Insurance</span></a></li>
                             <li class="drop-down-item"><a href="life_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span><span>Life Insurance</span></a></li>
                             <li class="drop-down-item"><a href="buisness_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span><span>Buisness Insurance</span></a></li>
-                            <li class="drop-down-item"><a href="farm_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-envira" aria-hidden="true"></i></span><span>Farm Insurance</span></a></li>                        </ul>
-                     </li>
-                     <li class=""><a href="#" class="nav-item white-font dropdown-activator">Bonds</a></li>
-                 </ul>
-                </nav>
-        <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>        
+                            <li class="drop-down-item"><a href="farm_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-envira" aria-hidden="true"></i></span><span>Farm Insurance</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="white-font dropdown-activator"><a href="#" class="nav-item dropdown-activator">Bonds</a></li>
+                </ul>
+                
+            </div>
+                    <img src="images/logos/trustecchoice.png" class="image is-96x96 little-padding" alt="Trusted Choice" />
+            </div>
+            </div>
+        </div>
+        <div class="hero-foot dark-blue">
+            <div class="container">
+            <nav class="nav">
+                
+                <div class="nav-toggle" onclick="navtoggle()" id="navtoggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
+            </div>
+            
+            
         </div>
 </div>
     <div class="container">
@@ -156,6 +165,9 @@
             d.classList.add("is-active");
             e.classList.add("is-active");
         }
+    }function showProducts(){
+        var that  = document.getElementById('productList');
+        that.classList.add('hover');
     }
 	</script>
 </html>

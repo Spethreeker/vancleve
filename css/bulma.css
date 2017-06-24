@@ -3745,8 +3745,8 @@ a.nav-item.is-tab.is-active {
 .nav-left {
   display: flex;
   justify-content: flex-start;
-  overflow: hidden;
-  overflow-x: auto;
+  /*overflow: hidden;*/
+  /*overflow-x: auto;*/
   white-space: nowrap;
 }
 
