@@ -85,6 +85,8 @@ header, footer {
     }
 .underlay.gradient{
     background: linear-gradient(180deg, rgba(50, 50, 50, 0.4), rgba(50,50, 50, 0.8));
+    z-index: 1;
+    position: relative;
 }
 .blue-color{
     color: #20395C
@@ -95,7 +97,7 @@ header, footer {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
     left: 0;
     right: 0;
 
@@ -103,13 +105,14 @@ header, footer {
     height: 260px;
 }
 .banner{
-     width: 100%;
+    width: 100%;
     height: 260px;
     z-index: 0;
     left: 0;
     right: 0;
     padding-top: 0px;
     line-height: 1.6em;
+    position: relative;
 }
 .banner .title, .banner .subtitle{
     padding-top: 20px;
@@ -117,35 +120,36 @@ header, footer {
     padding-right: 20px;
 }
 .building-banner:before{
-     background-image: url(../images/van-cleve-building.jpg);
+    background-image: url('../images/van-cleve-building.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .car-banner:before{
-    background-image: url(../images/car-accident-banner1.jpg);
+    background-image: url('../images/new-auto-banner.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .home-banner:before{
-    background-image: url(../images/home-banner.jpg);
+    background-image: url('../images/new-home-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
 }
 .life-banner:before{
-    background-image: url(../images/life-banner.jpg);
+    background-image: url('../images/life-banner.jpg');
      background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 .farm-banner:before{
-    background-image: url(../images/farm-banner.jpg);
+    background-image: url('../images/farm-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .buisness-banner:before{
-     background-image: url(../images/buisness_banner.jpg);
+     background-image: url('../images/buisness_banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -235,6 +239,7 @@ li .drop-down-container {
     background: #026CA1;
     transition: all .09s ease;
     box-shadow: rgba(10, 10, 10, 0.1), rgba(50, 50, 50, 1.4);
+    z-index: 5;
 }
 .drop-down-item .button{
     background: inherit;
@@ -252,7 +257,7 @@ li .drop-down-container {
 }
     li.hover > .drop-down-container {
         display: block;
-        
+        z-index: 5;
     }
     li.hover > .drop-down-container {
         -webkit-perspective: 1000px;
@@ -349,6 +354,9 @@ li .drop-down-container {
      /*.level{
          display: block;
      }*/
+     .nav{
+         position: relative;
+     }
  }
  .nav-dropdown{
      

@@ -38,7 +38,7 @@
                 </div>
                 <div class="nav-center">
                     <ul class="nav-item nav-menu animated nav-dropdown" id="navbar">
-                    <li class="dropdown-activator" id="productList"><a onclick="showProducts()" rel="canonical" class="nav-item dropdown-activator">Insurance Products</a>
+                    <li class="dropdown-activator" id="productList"><a onclick="showProducts()" rel="canonical" class="nav-item dropdown-activator">Insurance Products<span class="icon"><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
                         <ul class="drop-down-container" >
                             <li class="drop-down-item">
                                 <a href="homeowners_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span><span>Home Insurance</span></a></li>
@@ -48,7 +48,6 @@
                             <li class="drop-down-item"><a href="farm_insurance.html" class="button subtitle white-font"><span class="icon"><i class="fa fa-envira" aria-hidden="true"></i></span><span>Farm Insurance</span></a></li>
                         </ul>
                     </li>
-                    <li class="white-font dropdown-activator"><a href="#" class="nav-item dropdown-activator">Bonds</a></li>
                 </ul>
                 
             </div>
@@ -92,52 +91,64 @@
 
             <div class="column box has-text-centered insure-category">
                 <span class="image is-128-128"><i class="fa fa-5x fa-home blue-color" aria-hidden="true"></i></span>
-                <div class="">
+                <div class="content">
                     <a href="homeowners_insurance.html">
                         <h1 class="title display-font">Home Insurance</h1>
                         <p class="subtitle">Our Homeowners Policy protects your home, property, and provides personal liability coverage.</p>
                     </a>
                 </div>
+                <a class="button is-medium is-outlined" onclick="showHomeFormBox()">Get a Quote</a><a class="button is-outlined is-medium" href="homeowners_insurance.html">Learn More</a>
+                <div class="box is-hidden" id="home-form-box">
+                    <a class="button is-outline ">Fill out form online</a><a class="button is-outline ">Download form</a>
+                </div>
             </div>
             <div class="column  box has-text-centered insure-category">
                 <span class="image is-128-128"><i class="fa fa-car fa-5x blue-color" aria-hidden="true"></i></span>
-                <div class="">
+                <div class="content">
                     <a href="auto_insurance.html">
                         <h1 class="title display-font">Auto Insurance</h1>
                         <p class="subtitle">We insure both private passenger automobiles as well as commercial automobiles.</p>
                     </a>
                 </div>
+                <a class="button is-medium is-outlined" onclick="showAutoFormBox()">Get a Quote</a><a class="button is-outlined is-medium"href="auto_insurance.html">Learn More</a>
+                <div class="box is-hidden" id="auto-form-box">
+                    <a class="button is-outline ">Fill out form online</a><a class="button is-outline ">Download form</a>
+                </div>
             </div>
             <div class="column box has-text-centered insure-category">
                 <span class="image is-128-128"><i class="fa fa-heartbeat fa-5x blue-color" aria-hidden="true"></i></span>
-                <div class="">
-                    <a href="life_insurance.html" class="title">
+                <div class="content">
+                    <a href="life_insurance.html">
                         <h1 class="title display-font">Life Insurance</h1>
                         <p class="subtitle">We write several types of Life Insurance which include Universal Life and various types of Term Life
                             Policies.</p>
                     </a>
                 </div>
+                <a class="button is-outlined is-medium"href="life_insurance.html">Learn More</a>
             </div>
+            
 
         </div>
         <div class="columns is-centered">
             <div class="column box has-text-centered insure-category">
                 <span class="image is-128-128"><i class="fa fa-building  fa-5x blue-color" aria-hidden="true"></i></span>
-                <div class="">
+                <div class="content">
                     <a class="insure-category" href="buisness_insurance.html">
                         <h1 class="title display-font">Buisness Insurance</h1>
                         <p class="subtitle">We provide Property Insurance, Liability Insurance and various other coverages.</p>
                     </a>
                 </div>
+                <a class="button is-outlined is-medium"href="buisness_insurance.html">Learn More</a>
             </div>
             <div class="column box has-text-centered insure-category">
                 <span class="image is-128-128"><i class="fa fa-envira  fa-5x blue-color" aria-hidden="true"></i></span>
-                <div class="">
+                <div class="content">
                     <a href="farm_insurance.html">
                         <h1 class="title display-font ">Farm Insurance</h1>
                         <p class="subtitle">We write a Farm Package which covers farm property, farm liability and farm equipment.</p>
                     </a>
                 </div>
+                <a class="button is-outlined is-medium"href="farm_insurance.html">Learn More</a>
             </div>
         </div>
 
@@ -199,6 +210,26 @@
         } else {
             that.classList.add("hover");
             that.classList.add("hover");
+        }
+    }
+    function showHomeFormBox(){
+        var that  = document.getElementById('home-form-box');
+      if (that.classList.contains("is-active")) {
+            that.classList.remove("is-active");
+            that.classList.add("is-hidden");
+        } else {
+            that.classList.remove("is-hidden");
+            that.classList.add("is-active");
+        }
+    }
+    function showAutoFormBox(){
+        var that  = document.getElementById('auto-form-box');
+      if (that.classList.contains("is-active")) {
+            that.classList.remove("is-active");
+            that.classList.add("is-hidden");
+        } else {
+            that.classList.remove("is-hidden");
+            that.classList.add("is-active");
         }
     }
 </script>
