@@ -348,9 +348,7 @@ li .drop-down-container {
   }
 }
  @media screen and (max-width: 768px){
-     .little-padding{
-         display: none;
-     }
+    
      /*.level{
          display: block;
      }*/
@@ -391,7 +389,7 @@ li .drop-down-container {
       height: 200px;
   }
   .little-padding{
-    display: none;
+    /*display: none;*/
   }
   .drop-down-container{
       margin-left: auto;
